@@ -1,0 +1,99 @@
+html{
+    box-sizing:border-box;
+    font-family: 'Open Sans',sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+body{
+    background-color: #31493c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.panel{
+    background-color:#e8f1f2;
+    border-radius: 10px;
+    padding:15px 25px ;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pricing-plan{
+border-bottom: 1px solid  #31493c;
+}
+.pricing-plan:last-child{
+    border-bottom:none;
+    }
+.pricing-img{
+margin-bottom:25px ;
+max-width:100% ;
+    }
+.pricing-header{
+        color: #588157;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+.pricing-features{
+        margin: 50px 0 25px;
+        color:rgb(29, 46, 1) ;
+    }   
+.pricing-features-item{
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5px 0;
+    padding: 15px 0;
+    border-top: 1px solid  #dad7cd;
+}
+.pricing-features-item:last-child{
+    border-bottom: 1px solid #dad7cd;
+}
+.pricing-price{
+    color: #a3b18a;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+.pricing-button{
+  border: 2px solid #a3b18a;
+  border-radius: 10px;
+  color: #344e41;
+  font-weight: 700;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover, .pricing-button:focus {
+    background-color: #a3b18a;
+  }
+  
+  .pricing-button.is-featured {
+    background-color: #588157;
+    color: #dad7cd;
+  }
+  
+  .pricing-button.is-featured:hover, .pricing-button.is-featured:focus{
+    background-color: #a3b18a;
+    color: #344e41;
+  }
+  @media (min-width: 900px){
+    .panel {
+      flex-direction: row;
+    }
+    .pricing-plan {
+      border-bottom: none;
+      border-right: 1px solid #e1f1ff;
+      padding: 25px 50px;
+    }
+    .pricing-plan:last-child {
+      border-right: none;
+    }
+  }
